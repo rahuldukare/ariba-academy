@@ -1,0 +1,150 @@
+backend:
+  name: github
+  repo: rahuldukare/ariba-academy
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: site
+    label: Website Content
+    files:
+      - name: content
+        label: Home Page (all sections)
+        file: content/site.json
+        format: json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Meta description, name: description, widget: text }
+
+          - label: Brand
+            name: brand
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Academy name, name: name, widget: string }
+              - { label: Tagline, name: tagline, widget: string }
+
+          - label: Hero section
+            name: hero
+            widget: object
+            fields:
+              - { label: Small label above title, name: eyebrow, widget: string }
+              - { label: Headline, name: title, widget: string }
+              - { label: Sub-headline, name: subtitle, widget: text }
+              - { label: Highlights, name: highlights, widget: list, field: { label: Point, name: point, widget: string } }
+              - { label: Button text, name: ctaText, widget: string }
+
+          - label: Course, price & batch
+            name: course
+            widget: object
+            fields:
+              - { label: Course name, name: name, widget: string }
+              - { label: Currency symbol, name: currency, widget: string, default: "₹" }
+              - { label: Offer price (e.g. 14,999), name: price, widget: string }
+              - { label: Original price (leave empty for no discount), name: originalPrice, widget: string, required: false }
+              - { label: Next batch start (drives countdown), name: batchDate, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+              - { label: Class schedule, name: schedule, widget: string }
+              - { label: Duration, name: duration, widget: string }
+              - { label: Mode, name: mode, widget: string }
+
+          - label: "\"Is this you?\" section"
+            name: painPoints
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Items, name: items, widget: list, field: { label: Item, name: item, widget: string } }
+
+          - label: Curriculum (weeks)
+            name: curriculum
+            widget: list
+            summary: "{{fields.week}} – {{fields.title}}"
+            fields:
+              - { label: Week label, name: week, widget: string }
+              - { label: Module title, name: title, widget: string }
+              - { label: Hours, name: hours, widget: string }
+              - { label: Topics, name: topics, widget: list, field: { label: Topic, name: topic, widget: string } }
+
+          - label: Who is this for
+            name: audience
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+
+          - label: Bonuses
+            name: bonuses
+            widget: list
+            summary: "{{fields.title}} ({{fields.value}})"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Value (e.g. ₹3,000), name: value, widget: string }
+              - { label: Description, name: text, widget: text }
+
+          - label: Trainer / Mentor
+            name: mentor
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image, required: false }
+              - { label: Bio, name: bio, widget: text }
+              - label: Stats
+                name: stats
+                widget: list
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+
+          - label: Certificate
+            name: certificate
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Points, name: points, widget: list, field: { label: Point, name: point, widget: string } }
+
+          - label: Testimonials (real students only – section hides when empty)
+            name: testimonials
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Student name, name: name, widget: string }
+              - { label: Role / company, name: role, widget: string }
+              - { label: Testimonial, name: text, widget: text }
+
+          - label: FAQs
+            name: faqs
+            widget: list
+            summary: "{{fields.q}}"
+            fields:
+              - { label: Question, name: q, widget: string }
+              - { label: Answer, name: a, widget: text }
+
+          - label: Quote
+            name: quote
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Quote text, name: text, widget: text }
+              - { label: Author, name: author, widget: string }
+
+          - label: Contact details (leave empty to hide)
+            name: contact
+            widget: object
+            fields:
+              - { label: Email, name: email, widget: string, required: false }
+              - { label: Phone, name: phone, widget: string, required: false }
+              - { label: WhatsApp number with country code (e.g. 919876543210), name: whatsapp, widget: string, required: false }
