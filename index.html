@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Ariba 6-Week Course | Ariba Academy</title>
+  <meta name="description" content="Become a job-ready SAP Ariba consultant in 6 weeks. Live instructor-led training covering Sourcing, Contracts, Supplier Management, Buying & Invoicing and Integration." />
+  <meta property="og:title" content="SAP Ariba 6-Week Course | Ariba Academy" />
+  <meta property="og:description" content="Live, hands-on SAP Ariba training in 6 weeks." />
+  <meta name="theme-color" content="#0A1A33" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1A33'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23FFB020'%3EAA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><span class="logo-mark">AA</span><span data-bind="brand.name">Ariba Academy</span></a>
+      <nav class="nav-links">
+        <a href="#curriculum">Curriculum</a>
+        <a href="#mentor">Trainer</a>
+        <a href="#faq">FAQ</a>
+        <a href="#enroll" class="btn btn-sm">Enroll Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow" data-bind="hero.eyebrow">New batch starting soon</span>
+          <h1 data-bind="hero.title">Become a Job-Ready SAP Ariba Consultant in 6 Weeks</h1>
+          <p class="lead" data-bind="hero.subtitle"></p>
+          <ul class="checks" id="hero-highlights"></ul>
+          <div class="hero-cta">
+            <a href="#enroll" class="btn btn-lg" data-bind="hero.ctaText">Enroll Now</a>
+            <a href="#curriculum" class="btn btn-ghost btn-lg">View Curriculum</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <p class="card-label">Next batch starts in</p>
+          <div class="countdown" data-countdown>
+            <div><b data-d>00</b><span>Days</span></div>
+            <div><b data-h>00</b><span>Hours</span></div>
+            <div><b data-m>00</b><span>Min</span></div>
+            <div><b data-s>00</b><span>Sec</span></div>
+          </div>
+          <dl class="facts">
+            <div><dt>Duration</dt><dd data-bind="course.duration">6 Weeks</dd></div>
+            <div><dt>Mode</dt><dd data-bind="course.mode">Live Online</dd></div>
+            <div><dt>Starts</dt><dd id="batch-date-text">—</dd></div>
+            <div><dt>Schedule</dt><dd data-bind="course.schedule"></dd></div>
+          </dl>
+          <div class="price-row">
+            <span class="price"><span data-bind="course.currency">₹</span><span data-bind="course.price"></span></span>
+            <s class="old-price"><span data-bind="course.currency">₹</span><span data-bind="course.originalPrice"></span></s>
+            <span class="badge" id="discount-badge"></span>
+          </div>
+          <a href="#enroll" class="btn btn-block">Reserve My Seat</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PAIN POINTS -->
+    <section class="section">
+      <div class="container narrow center">
+        <h2 data-bind="painPoints.title">Is this you?</h2>
+        <ul class="pain-list" id="pain-list"></ul>
+        <p class="section-sub">That's exactly why we built a focused, 6-week programme to take you from basics to project-ready.</p>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section class="section alt" id="curriculum">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow dark">Curriculum</span>
+          <h2>What will you learn in 6 weeks?</h2>
+          <p class="section-sub">One module a week. Every module ends with a hands-on assignment.</p>
+        </div>
+        <div class="modules" id="modules"></div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2>Who is this course for?</h2>
+        </div>
+        <div class="grid-3" id="audience"></div>
+      </div>
+    </section>
+
+    <!-- BONUSES -->
+    <section class="section dark-band">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Included free</span>
+          <h2>Unlock bonuses worth <span id="bonus-total"></span></h2>
+        </div>
+        <div class="grid-3" id="bonuses"></div>
+      </div>
+    </section>
+
+    <!-- MENTOR -->
+    <section class="section" id="mentor">
+      <div class="container mentor">
+        <div class="mentor-photo" id="mentor-photo"></div>
+        <div>
+          <span class="eyebrow dark">Meet your trainer</span>
+          <h2 data-bind="mentor.name"></h2>
+          <p class="mentor-role" data-bind="mentor.role"></p>
+          <p data-bind="mentor.bio"></p>
+          <div class="stats" id="mentor-stats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (hidden when empty) -->
+    <section class="section alt" id="testimonials-section" hidden>
+      <div class="container">
+        <div class="section-head center"><h2>What our learners say</h2></div>
+        <div class="grid-3" id="testimonials"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATE -->
+    <section class="section alt">
+      <div class="container cert">
+        <div>
+          <h2 data-bind="certificate.title">Get Certified</h2>
+          <ul class="checks dark" id="cert-points"></ul>
+          <a href="#enroll" class="btn">Enroll Now</a>
+        </div>
+        <div class="cert-visual" aria-hidden="true">
+          <div class="cert-paper">
+            <p class="cert-small">Certificate of Completion</p>
+            <p class="cert-name">Your Name</p>
+            <p class="cert-small">has successfully completed</p>
+            <p class="cert-course" data-bind="course.name">SAP Ariba Complete Course</p>
+            <p class="cert-brand" data-bind="brand.name">Ariba Academy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head center"><h2>Frequently Asked Questions</h2></div>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-band">
+      <div class="container narrow center">
+        <blockquote data-bind="quote.text"></blockquote>
+        <p class="quote-author">— <span data-bind="quote.author"></span></p>
+      </div>
+    </section>
+
+    <!-- ENROLL -->
+    <section class="section alt" id="enroll">
+      <div class="container enroll">
+        <div>
+          <span class="eyebrow dark">Limited seats per batch</span>
+          <h2>Reserve your seat</h2>
+          <p>Fill in your details and our team will call you within 24 hours with the payment link and joining details.</p>
+          <div class="price-row big">
+            <span class="price"><span data-bind="course.currency">₹</span><span data-bind="course.price"></span></span>
+            <s class="old-price"><span data-bind="course.currency">₹</span><span data-bind="course.originalPrice"></span></s>
+          </div>
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+        <form class="form" name="enquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="company">
+          <input type="hidden" name="form-name" value="enquiry" />
+          <p class="hp"><label>Leave empty <input name="company" /></label></p>
+          <label>Full name<input type="text" name="name" required autocomplete="name" /></label>
+          <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+          <label>Phone / WhatsApp<input type="tel" name="phone" required autocomplete="tel" pattern="[0-9+ \-]{8,15}" /></label>
+          <label>Your background
+            <select name="background" required>
+              <option value="">Select one</option>
+              <option>Fresher / Student</option>
+              <option>Procurement professional</option>
+              <option>SAP MM consultant</option>
+              <option>Other SAP consultant</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Message (optional)<textarea name="message" rows="3"></textarea></label>
+          <input type="hidden" name="batch" id="batch-field" />
+          <button type="submit" class="btn btn-block btn-lg">Submit Enquiry</button>
+          <p class="form-note">We respect your privacy. No spam.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong data-bind="brand.name">Ariba Academy</strong> — <span data-bind="brand.tagline"></span></p>
+      <p class="muted">© <span id="year"></span> Ariba Academy. SAP and SAP Ariba are trademarks of SAP SE. Ariba Academy is an independent training provider and is not affiliated with or endorsed by SAP SE.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile bar -->
+  <div class="sticky-bar">
+    <div>
+      <span class="price"><span data-bind="course.currency">₹</span><span data-bind="course.price"></span></span>
+      <s class="old-price"><span data-bind="course.currency">₹</span><span data-bind="course.originalPrice"></span></s>
+    </div>
+    <a href="#enroll" class="btn">Enroll Now</a>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
