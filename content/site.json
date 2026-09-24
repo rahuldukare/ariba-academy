@@ -1,0 +1,189 @@
+{
+  "seo": {
+    "title": "SAP Ariba 6-Week Course | Ariba Academy",
+    "description": "Become a job-ready SAP Ariba consultant in 6 weeks. Live instructor-led training covering Sourcing, Contracts, Supplier Management, Buying & Invoicing and Integration."
+  },
+  "brand": {
+    "name": "Ariba Academy",
+    "tagline": "SAP Ariba training that gets you project-ready"
+  },
+  "hero": {
+    "eyebrow": "New batch starting soon",
+    "title": "Become a Job-Ready SAP Ariba Consultant in 6 Weeks",
+    "subtitle": "Live, hands-on training on the complete SAP Ariba Source-to-Pay suite — taught through real project scenarios, not just slides.",
+    "highlights": [
+      "40+ hours of live instructor-led sessions",
+      "Recordings of every class for lifetime revision",
+      "Real-world capstone project + interview preparation",
+      "7-day no-questions-asked refund policy"
+    ],
+    "ctaText": "Enroll Now"
+  },
+  "course": {
+    "name": "SAP Ariba Complete Course",
+    "currency": "₹",
+    "price": "14,999",
+    "originalPrice": "24,999",
+    "batchDate": "2026-10-12T19:00:00+05:30",
+    "schedule": "Mon–Fri, 7:00 PM – 8:30 PM IST (Live on Zoom)",
+    "duration": "6 Weeks",
+    "mode": "Live Online"
+  },
+  "painPoints": {
+    "title": "Is this you?",
+    "items": [
+      "You work in procurement or SAP MM and want to move into SAP Ariba",
+      "You applied for Ariba roles but got stuck on real project questions in interviews",
+      "You learned from scattered YouTube videos and still don't see the full Source-to-Pay picture",
+      "You want a structured, mentor-led path with doubt-clearing, not just recordings"
+    ]
+  },
+  "curriculum": [
+    {
+      "week": "Week 1",
+      "title": "SAP Ariba Foundations & Navigation",
+      "hours": "7 hrs",
+      "topics": [
+        "Source-to-Pay process and where SAP Ariba fits",
+        "Ariba Network, realms, users, groups and permissions",
+        "SAP Ariba solution landscape and how it connects to S/4HANA / ECC"
+      ]
+    },
+    {
+      "week": "Week 2",
+      "title": "Supplier Lifecycle & Performance Management",
+      "hours": "7 hrs",
+      "topics": [
+        "Supplier registration, qualification and onboarding workflows",
+        "Questionnaires, approval flows and supplier 360° profile",
+        "Supplier risk and performance evaluation basics"
+      ]
+    },
+    {
+      "week": "Week 3",
+      "title": "Strategic Sourcing",
+      "hours": "7 hrs",
+      "topics": [
+        "RFI, RFP, RFQ and reverse auctions — end to end",
+        "Sourcing templates, projects, events and scoring",
+        "Award scenarios and handing awards to contracts"
+      ]
+    },
+    {
+      "week": "Week 4",
+      "title": "Contract Management",
+      "hours": "6 hrs",
+      "topics": [
+        "Contract workspaces, contract requests and templates",
+        "Clause library, contract authoring and approvals",
+        "Compliance contracts and contract-to-procure linkage"
+      ]
+    },
+    {
+      "week": "Week 5",
+      "title": "Buying & Invoicing (Procure-to-Pay)",
+      "hours": "7 hrs",
+      "topics": [
+        "Requisitions, guided buying, catalogs (CIF and punch-out)",
+        "Purchase orders, receipts, invoices and invoice exceptions",
+        "Supplier-side view: PO collaboration on the Ariba Network"
+      ]
+    },
+    {
+      "week": "Week 6",
+      "title": "Integration, Reporting & Career Launch",
+      "hours": "8 hrs",
+      "topics": [
+        "Integration concepts: master data, transactional documents, cloud integration",
+        "Reporting and analytics for procurement teams",
+        "Capstone project, resume review and mock interviews"
+      ]
+    }
+  ],
+  "audience": [
+    {
+      "title": "SAP MM / Procurement Professionals",
+      "text": "Add SAP Ariba to your profile and move into higher-paying cloud procurement roles."
+    },
+    {
+      "title": "Freshers & Graduates",
+      "text": "Start your SAP career with a focused, in-demand module and a clear project story for interviews."
+    },
+    {
+      "title": "Working Consultants",
+      "text": "Fill gaps across Sourcing, Contracts, SLP and Buying so you can lead end-to-end implementations."
+    }
+  ],
+  "bonuses": [
+    {
+      "title": "Interview Question Bank",
+      "value": "₹3,000",
+      "text": "Scenario-based SAP Ariba interview questions with model answers."
+    },
+    {
+      "title": "Resume & LinkedIn Review",
+      "value": "₹2,500",
+      "text": "One-to-one review to position you for SAP Ariba roles."
+    },
+    {
+      "title": "Configuration Notes & Templates",
+      "value": "₹2,000",
+      "text": "Step-by-step notes and documents you can reuse on real projects."
+    }
+  ],
+  "mentor": {
+    "name": "Your Trainer's Name",
+    "role": "Senior SAP Ariba Consultant",
+    "photo": "",
+    "bio": "Replace this text from the admin panel with your trainer's real background — years of experience, projects delivered, industries and certifications.",
+    "stats": [
+      { "value": "10+", "label": "Years in SAP" },
+      { "value": "15+", "label": "Implementations" },
+      { "value": "1:1", "label": "Doubt support" }
+    ]
+  },
+  "certificate": {
+    "title": "Get Certified on Completion",
+    "points": [
+      "Earn an Ariba Academy certificate of completion",
+      "Share your verified certificate on LinkedIn",
+      "Guidance to prepare for the official SAP Ariba certification exams"
+    ]
+  },
+  "testimonials": [],
+  "faqs": [
+    {
+      "q": "Do I need prior SAP experience?",
+      "a": "No. Basic procurement knowledge helps, but Week 1 covers the fundamentals. Learners with SAP MM experience will progress faster."
+    },
+    {
+      "q": "What if I miss a live class?",
+      "a": "Every session is recorded and shared within 24 hours, so you can catch up anytime and bring your doubts to the next class."
+    },
+    {
+      "q": "Will I get a certificate?",
+      "a": "Yes. You receive an Ariba Academy certificate of completion after finishing the course and the capstone project. Official SAP certification exams are booked separately with SAP."
+    },
+    {
+      "q": "Is there placement support?",
+      "a": "We provide resume review, mock interviews and job-search guidance. We do not guarantee placement."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "If the course isn't right for you, request a refund within 7 days of your batch start date for a full refund."
+    },
+    {
+      "q": "How do I pay and enroll?",
+      "a": "Submit the enquiry form below. Our team will contact you with the payment link and joining details."
+    }
+  ],
+  "quote": {
+    "text": "Procurement is no longer a back-office function — it is a strategic lever. The people who know the tools lead the change.",
+    "author": "Ariba Academy"
+  },
+  "contact": {
+    "email": "",
+    "phone": "",
+    "whatsapp": ""
+  }
+}
