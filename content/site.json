@@ -1,13 +1,13 @@
 {
   "contact": {
-    "email": "aribaacademy@gmail.com,",
+    "email": "aribaacademy@gmail.com",
     "phone": "",
     "whatsapp": "918087034182"
   },
   "mentor": {
     "name": "Rahul Dukare",
     "role": "Senior SAP Ariba Consultant",
-    "photo": "",
+    "photo": "/images/uploads/1673249495799.jpeg",
     "bio": "I've delivered Seven upstream implementations across Sourcing, Contract Management, Supplier Lifecycle & Performance (SLP), Buying & Invoicing, Guided Buying and Supply Chain Collaboration, including integration with SAP S/4HANA through Cloud Integration Gateway.\n\nMy work covers the full SAP Ariba implementation methodology: scoping, blueprint, requirements gathering, process and application design, configuration, integration testing, UAT, go-live and hypercare. I also work on SAP MM Procure-to-Pay: purchase requisitions, purchase orders, goods receipt and invoice verification.",
     "stats": [
       {
