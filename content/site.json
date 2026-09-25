@@ -1,11 +1,81 @@
 {
-  "seo": {
-    "title": "SAP Ariba 6-Week Course | Ariba Academy",
-    "description": "Become a job-ready SAP Ariba consultant in 6 weeks. Live instructor-led training covering Sourcing, Contracts, Supplier Management, Buying & Invoicing and Integration."
+  "contact": {
+    "email": "aribaacademy@gmail.com,",
+    "phone": "",
+    "whatsapp": "918087034182"
   },
+  "mentor": {
+    "name": "Rahul Dukare",
+    "role": "Senior SAP Ariba Consultant",
+    "photo": "",
+    "bio": "I've delivered Seven upstream implementations across Sourcing, Contract Management, Supplier Lifecycle & Performance (SLP), Buying & Invoicing, Guided Buying and Supply Chain Collaboration, including integration with SAP S/4HANA through Cloud Integration Gateway.\n\nMy work covers the full SAP Ariba implementation methodology: scoping, blueprint, requirements gathering, process and application design, configuration, integration testing, UAT, go-live and hypercare. I also work on SAP MM Procure-to-Pay: purchase requisitions, purchase orders, goods receipt and invoice verification.",
+    "stats": [
+      {
+        "value": "10+",
+        "label": "Years in SAP"
+      },
+      {
+        "value": "15+",
+        "label": "Implementations"
+      },
+      {
+        "value": "1:1",
+        "label": "Doubt support"
+      }
+    ]
+  },
+  "audience": [
+    {
+      "title": "SAP MM / Procurement Professionals",
+      "text": "Add SAP Ariba to your profile and move into higher-paying cloud procurement roles."
+    },
+    {
+      "title": "Freshers & Graduates",
+      "text": "Start your SAP career with a focused, in-demand module and a clear project story for interviews."
+    },
+    {
+      "title": "Working Consultants",
+      "text": "Fill gaps across Sourcing, Contracts, SLP and Buying so you can lead end-to-end implementations."
+    }
+  ],
   "brand": {
     "name": "Ariba Academy",
     "tagline": "SAP Ariba training that gets you project-ready"
+  },
+  "bonuses": [
+    {
+      "title": "Interview Question Bank",
+      "value": "₹3,000",
+      "text": "Scenario-based SAP Ariba interview questions with model answers."
+    },
+    {
+      "title": "Resume & LinkedIn Review",
+      "value": "₹2,500",
+      "text": "One-to-one review to position you for SAP Ariba roles."
+    },
+    {
+      "title": "Configuration Notes & Templates",
+      "value": "₹2,000",
+      "text": "Step-by-step notes and documents you can reuse on real projects."
+    }
+  ],
+  "testimonials": [],
+  "certificate": {
+    "title": "Get Certified on Completion",
+    "points": [
+      "Earn an Ariba Academy certificate of completion",
+      "Share your verified certificate on LinkedIn",
+      "Guidance to prepare for the official SAP Ariba certification exams"
+    ]
+  },
+  "painPoints": {
+    "title": "Is this you?",
+    "items": [
+      "You work in procurement or SAP MM and want to move into SAP Ariba",
+      "You applied for Ariba roles but got stuck on real project questions in interviews",
+      "You learned from scattered YouTube videos and still don't see the full Source-to-Pay picture",
+      "You want a structured, mentor-led path with doubt-clearing, not just recordings"
+    ]
   },
   "hero": {
     "eyebrow": "New batch starting soon",
@@ -28,15 +98,6 @@
     "schedule": "Mon–Fri, 7:00 PM – 8:30 PM IST (Live on Zoom)",
     "duration": "6 Weeks",
     "mode": "Live Online"
-  },
-  "painPoints": {
-    "title": "Is this you?",
-    "items": [
-      "You work in procurement or SAP MM and want to move into SAP Ariba",
-      "You applied for Ariba roles but got stuck on real project questions in interviews",
-      "You learned from scattered YouTube videos and still don't see the full Source-to-Pay picture",
-      "You want a structured, mentor-led path with doubt-clearing, not just recordings"
-    ]
   },
   "curriculum": [
     {
@@ -100,57 +161,10 @@
       ]
     }
   ],
-  "audience": [
-    {
-      "title": "SAP MM / Procurement Professionals",
-      "text": "Add SAP Ariba to your profile and move into higher-paying cloud procurement roles."
-    },
-    {
-      "title": "Freshers & Graduates",
-      "text": "Start your SAP career with a focused, in-demand module and a clear project story for interviews."
-    },
-    {
-      "title": "Working Consultants",
-      "text": "Fill gaps across Sourcing, Contracts, SLP and Buying so you can lead end-to-end implementations."
-    }
-  ],
-  "bonuses": [
-    {
-      "title": "Interview Question Bank",
-      "value": "₹3,000",
-      "text": "Scenario-based SAP Ariba interview questions with model answers."
-    },
-    {
-      "title": "Resume & LinkedIn Review",
-      "value": "₹2,500",
-      "text": "One-to-one review to position you for SAP Ariba roles."
-    },
-    {
-      "title": "Configuration Notes & Templates",
-      "value": "₹2,000",
-      "text": "Step-by-step notes and documents you can reuse on real projects."
-    }
-  ],
-  "mentor": {
-    "name": "Your Trainer's Name",
-    "role": "Senior SAP Ariba Consultant",
-    "photo": "",
-    "bio": "Replace this text from the admin panel with your trainer's real background — years of experience, projects delivered, industries and certifications.",
-    "stats": [
-      { "value": "10+", "label": "Years in SAP" },
-      { "value": "15+", "label": "Implementations" },
-      { "value": "1:1", "label": "Doubt support" }
-    ]
+  "quote": {
+    "text": "Procurement is no longer a back-office function — it is a strategic lever. The people who know the tools lead the change.",
+    "author": "Ariba Academy"
   },
-  "certificate": {
-    "title": "Get Certified on Completion",
-    "points": [
-      "Earn an Ariba Academy certificate of completion",
-      "Share your verified certificate on LinkedIn",
-      "Guidance to prepare for the official SAP Ariba certification exams"
-    ]
-  },
-  "testimonials": [],
   "faqs": [
     {
       "q": "Do I need prior SAP experience?",
@@ -177,13 +191,8 @@
       "a": "Submit the enquiry form below. Our team will contact you with the payment link and joining details."
     }
   ],
-  "quote": {
-    "text": "Procurement is no longer a back-office function — it is a strategic lever. The people who know the tools lead the change.",
-    "author": "Ariba Academy"
-  },
-  "contact": {
-    "email": "",
-    "phone": "",
-    "whatsapp": ""
+  "seo": {
+    "title": "SAP Ariba 6-Week Course | Ariba Academy",
+    "description": "Become a job-ready SAP Ariba consultant in 6 weeks. Live instructor-led training covering Sourcing, Contracts, Supplier Management, Buying & Invoicing and Integration."
   }
 }
