@@ -24,6 +24,7 @@ collections:
             fields:
               - { label: Page title, name: title, widget: string }
               - { label: Meta description, name: description, widget: text }
+              - { label: Social share image (1200x630), name: ogImage, widget: image, required: false, hint: "Shown when the link is shared on WhatsApp/LinkedIn. Leave empty to use /images/og-image.png" }
 
           - label: Brand
             name: brand
