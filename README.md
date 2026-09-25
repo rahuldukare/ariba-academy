@@ -13,7 +13,9 @@ Static landing page + Decap CMS admin, hosted free on Netlify.
 | `thank-you.html` | Shown after enquiry form submit |
 | `admin/` | Decap CMS (GitHub backend) |
 | `images/uploads/` | Images uploaded from the admin |
-| `netlify.toml` | Netlify settings |
+| `netlify.toml` | Netlify settings (runs `node build.js` on every deploy) |
+| `build.js` | SEO build: pre-renders `site.json` into `index.html`, adds meta/OG/JSON-LD tags, writes `sitemap.xml` |
+| `robots.txt` | Crawler rules + sitemap location |
 
 ## Giving someone else admin access
 Add them as a collaborator (Settings → Collaborators) on this GitHub repo with Write access. They can then log in at `/admin/`.

@@ -1,5 +1,10 @@
 [build]
   publish = "."
+  # Pre-renders content/site.json into index.html + writes sitemap.xml (SEO)
+  command = "node build.js"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[headers]]
   for = "/content/*"
@@ -10,3 +15,20 @@
   for = "/admin/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/thank-you*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Send www and the Netlify subdomain to the main domain (one canonical URL)
+[[redirects]]
+  from = "https://www.aribaacademy.com/*"
+  to = "https://aribaacademy.com/:splat"
+  status = 301
+  force = true

@@ -51,7 +51,7 @@
     const mentor = d.mentor || {};
     const initials = (mentor.name || 'AA').split(/\s+/).map((w) => w[0]).slice(0, 2).join('');
     $('mentor-photo').innerHTML = mentor.photo
-      ? `<img src="${esc(mentor.photo)}" alt="${esc(mentor.name)}" loading="lazy" />`
+      ? `<img src="${esc(mentor.photo)}" alt="${esc(mentor.name)}, ${esc(mentor.role)}" width="400" height="400" loading="lazy" />`
       : `<span>${esc(initials)}</span>`;
     $('mentor-stats').innerHTML = (mentor.stats || [])
       .map((s) => `<div><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`)
@@ -75,7 +75,8 @@
     const links = [];
     if (c.whatsapp) links.push(`<a class="btn btn-wa" href="https://wa.me/${esc(c.whatsapp.replace(/[^0-9]/g, ''))}" target="_blank" rel="noopener">Chat on WhatsApp</a>`);
     if (c.phone) links.push(`<a href="tel:${esc(c.phone.replace(/\s/g, ''))}">📞 ${esc(c.phone)}</a>`);
-    if (c.email) links.push(`<a href="mailto:${esc(c.email)}">✉️ ${esc(c.email)}</a>`);
+    const email = (c.email || '').replace(/[,;\s]+$/, '');
+    if (email) links.push(`<a href="mailto:${esc(email)}">✉️ ${esc(email)}</a>`);
     $('contact-links').innerHTML = links.join('');
 
     const p = num(d.course?.price), o = num(d.course?.originalPrice);
