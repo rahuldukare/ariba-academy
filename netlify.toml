@@ -16,6 +16,20 @@
   [headers.values]
     X-Robots-Tag = "noindex"
 
+
+# Learning platform (VPS) served at aribaacademy.com/learn
+[[redirects]]
+from = "/learn"
+to = "https://app.aribaacademy.com/learn"
+status = 200
+force = true
+
+[[redirects]]
+from = "/learn/*"
+to = "https://app.aribaacademy.com/learn/:splat"
+status = 200
+force = true
+
 [[headers]]
   for = "/thank-you*"
   [headers.values]
