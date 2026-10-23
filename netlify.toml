@@ -46,3 +46,10 @@ force = true
   to = "https://aribaacademy.com/:splat"
   status = 301
   force = true
+
+# Tell Bing / IndexNow about new or changed pages after each deploy
+[[plugins]]
+  package = "./netlify/plugins/indexnow"
+  [plugins.inputs]
+    siteUrl = "https://aribaacademy.com"
+    key = "8441638cea2864468caf56a8986c845c"
